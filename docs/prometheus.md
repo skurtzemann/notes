@@ -84,12 +84,25 @@ Number of series per metric name
 sort_desc(count by(__name__) ({__name__!=""}))
 ```
 
+Top 10 cardinality of metric
+```
+topk(
+    10,
+    count({__name__!=""}) by (__name__)
+)
+```
+
+Total number of metric
+```
+count(group by(__name__) ({__name__!=""}))
+```
+
 Total number of series
 ```
 count({__name__!=""})
 ```
 
-Number of series per target/instance
+Number of series per instance
 ```
 sort_desc(count by(instance) ({__name__!=""}))
 ```
