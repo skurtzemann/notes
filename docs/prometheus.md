@@ -22,9 +22,9 @@ timestamp=1544978108, company=ACME, location=headquarters, beverage=coffee, valu
 #### Databases
 
 Modern time series databases store the following components:
-* A **timestamp**
-* A **value**
-* Some **context about the value**, encoded in a metric name or in associated key/value pairs
+* a **timestamp**
+* a **value**
+* some **context about the value**, encoded in a metric name or in associated key/value pairs
 
 
 ### Metric
