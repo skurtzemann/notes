@@ -2,6 +2,33 @@
 
 ## General
 
+### Time series
+
+
+#### Data
+
+Time series data are: 
+  * a sequence of numerical data points 
+  * indexed chronologically from the same source
+
+In the scope of Prometheus, these data points are collected at a fixed time interval
+
+An abstract example
+```
+timestamp=1544978108, company=ACME, location=headquarters, beverage=coffee, value=40172
+```
+
+
+#### Databases
+
+Modern time series databases store the following components:
+* A **timestamp**
+* A **value**
+* Some **context about the value**, encoded in a metric name or in associated key/value pairs
+
+
+### Metric
+
 A metric name is a label (`__name__`)
 <details><summary>Example:</summary>
 <p>
