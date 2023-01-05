@@ -4,7 +4,6 @@
 
 ### Time series
 
-
 #### Data
 
 Time series data are: 
@@ -17,7 +16,6 @@ An abstract example
 ```
 timestamp=1544978108, company=ACME, location=headquarters, beverage=coffee, value=40172
 ```
-
 
 #### Databases
 
@@ -32,7 +30,6 @@ Modern time series databases store the following components:
 A metric name is a label (`__name__`)
 <details><summary>Example:</summary>
 <p>
-
 ```
 my_metric{
     job="scrape-job",
@@ -63,6 +60,7 @@ Labels comes from 2 sources:
 
 Start with `__` is for internal use:
 * `__meta`: added by Service Discovery
+<!-- TODO: example -->
 * `__tmp`: can be used by users
 
 
